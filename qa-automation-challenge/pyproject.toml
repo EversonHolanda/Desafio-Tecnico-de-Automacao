@@ -1,0 +1,10 @@
+[project]
+name = "qa-automation-challenge"
+version = "0.1.0"
+description = "BDD API and UI automation for the DemoQA challenge"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --alluredir=allure-results --clean-alluredir"
+pythonpath = ["."]
